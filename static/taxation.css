@@ -1,0 +1,54 @@
+form {
+    width: 50%;
+    margin-top: 100px;
+  }
+  
+  #contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 35px;
+    color: black;
+    background-color: #dad7cd;
+  }
+  
+  #contact-box form {
+    width: 50%;
+  }
+  
+  #contact-box label {
+    font-size: 1.2rem;
+    font-family: "Baloo 2", cursive;
+  }
+  #contact {
+    position: relative;
+  }
+  
+  #contact::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.9;
+  }
+  
+  #contact-box input,
+  #contact-box textarea {
+    width: 100%;
+    padding: 0.9rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    color: black;
+  }
+  .submitbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 40%;
+    background-color: #344e41;
+  }
+  .submitbtn:hover {
+    transform: scale(1.1);
+    transition: 0.5s;
+  }

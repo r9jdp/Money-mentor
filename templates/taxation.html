@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link href="../static/taxation.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../static/index.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Money Mentor</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <style>
+      .myforms input{
+        width: 100%;
+        padding: 1.2rem;
+        border-radius: 12px;
+        font-size: 1.2rem;
+        margin: 10px 0px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="text-gray-600 body-font">
+      <div
+        class="container mx-auto flex flex-wrap p-5 flex-col md:flex-row items-center"
+      >
+        <a
+          class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0"
+          href="/"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-10 h-10 text-white p-2 bg-green-500 rounded-full"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"
+            ></path>
+          </svg>
+          <span class="ml-3 text-xl">Money Mentor</span>
+        </a>
+        <nav
+          class="md:ml-auto md:mr-auto flex flex-wrap items-center text-base justify-center"
+        >
+          <a class="mr-5 hover:text-gray-900"></a>
+          <a class="mr-5 hover:text-gray-900"></a>
+          <a class="mr-5 hover:text-gray-900"></a>
+          <a class="mr-5 hover:text-gray-900"></a>
+        </nav>
+        </button>
+      </div>
+    </header>
+    <h4 class="formheader" style="color: black; background-color: #dad7cd; font-size: 1.8rem; padding: 20px;">Let's help you save yourself from paying more taxes ..</h4>
+    <!-- Form -->
+    <section id="contact">
+      <div id="contact-box">
+        <form class="myforms" action="/taxation", method="POST">
+          <div class="form-group">
+            <label for="age">Age</label>
+            <input
+              type="text"
+              name="age"
+              id="age"
+              placeholder="Enter Your Age"
+            />
+          </div>
+          <div class="form-group">
+            <label for="location">Location </label>
+            <input
+              type="text"
+              name="location"
+              id="location"
+              placeholder="Enter Your Location"
+            />
+          </div>
+          <div class="form-group">
+            <label for="family">Family Members </label>
+            <input
+              type="text"
+              name="family"
+              id="family"
+              placeholder="Enter the number of family members"
+            />
+          </div>
+          <div class="form-group">
+            <label for="investment">Investment </label>
+            <input
+              type="text"
+              name="investment"
+              id="investment"
+              placeholder="Do you have any investments? (Yes/No). If yes, please specify."
+            />
+          </div>
+          <div class="form-group">
+            <label for="debt">Debts </label>
+            <input
+              type="text"
+              name="debt"
+              id="debt"
+              placeholder="Do you have any debts? (Yes/No). If yes, please specify."
+            />
+          </div>
+          <div class="form-group">
+            <button style="padding: 0.9rem; font-size: 1rem;" class="text-white font-bold py-2 px-4 rounded submitbtn">
+              <a href=""></a>
+              Submit
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
